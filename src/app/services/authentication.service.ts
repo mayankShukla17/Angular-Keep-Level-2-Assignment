@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class AuthenticationService {
-  
+
   constructor(private httpClient: HttpClient) {
   }
 
@@ -26,4 +26,5 @@ export class AuthenticationService {
     }).map((res) => res['isAuthenticated'])
       .toPromise();
   }
+
 }

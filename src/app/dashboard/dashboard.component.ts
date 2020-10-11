@@ -7,7 +7,8 @@ import { Note } from './../note';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit{
+export class DashboardComponent implements OnInit {
+
   errMessage: String;
   note: Note = new Note();
   notes: Array<Note> = [];
